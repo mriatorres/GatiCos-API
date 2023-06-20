@@ -32,11 +32,14 @@ async function loadRandomGaticos() {
     const img2 = document.getElementById("img2");
     const img3 = document.getElementById("img3");
     const img4 = document.getElementById("img4");
+    const img5 = document.getElementById("img5");
 
     img1.src = data[0].url;
     img2.src = data[1].url;
     img3.src = data[2].url;
     img4.src = data[3].url;
+    img5.src = data[4].url;
+
 
     }
 }

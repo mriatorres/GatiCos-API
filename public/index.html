@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Consumiendo API</title>
 </head>
 <body class="bg-gradient-to-r from-blue-800 to-indigo-900">
-    <h1 class="mt-20 font-extrabold text-2xl text-center text-white">GatiCos</h1>
+    <h1 class="mt-20 font-extrabold text-2xl text-center text-white"><i class="fa-solid fa-cat"></i> GatiCos</h1>
 
     <div class="m-10" id="descripcion">
         <p class="text-center text-white">Genera, sube y añade a favoritos imagenes de gatos</p>
     </div>
     <section id="randomGaticos" class="ml-10 mr-10 mt-10">
 
-        <h2 class="text-center text-lg font-bold text-white mb-4">Gatos aleatorios</h2>
+        <h2 class="text-center text-lg font-bold text-white mb-4">Gatos aleatorios <i><i class="fa-solid fa-shuffle"></i></i></h2>
 
         <span id="error"></span>
 <div class="items-center">
@@ -58,16 +59,19 @@
     </div>
     </section>
      
-    <section class="m-10 text-center text-white" id="gaticosFavorites">
-        <h2 class="text-center text-white text-lg font-bold">Gatos favoritos</h2>
+    <section class="m-10 text-center text-white items-center w-400" id="gaticosFavorites">
+        <h2 class="text-center text-white text-lg font-bold">Gatos favoritos <i><i class="fa-solid fa-star"></i></i></h2>
 
-        <article>
-            <img id="img1"width="340" alt="Imagen gato aleatorio">  
-            <button>Sacar al gato de favoritos</button>
-        </article>
+       <div class="lg:flex">
+        <button class="absolute mt-4 ml-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-red-400 hover:translate-y-2 hover:scale-150 hover:ease-in duration-300 hover:text-red-600">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          </button>
+        <img src="" id="img5" width="340" alt="">
 
+       </div>
     </section>
     
-    <script src="./main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
