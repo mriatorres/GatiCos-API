@@ -13,7 +13,7 @@
 
 // const button = document.querySelector("button");
 
-const API_URL_RANDOM = 'https://api.thecatapi.com/v1/images/search?limit=4';
+const API_URL_RANDOM = 'https://api.thecatapi.com/v1/images/search?limit=5&api_key=live_hc0y7Q39dB3QzxIWVtJtUjqqiqtCSK0uN2SGEdFz6rVm71KdZHFj58SjZOnVHobN';
 const API_URL_FAVORITES = 'https://api.thecatapi.com/v1/favourites?limit=3&api_key=live_hc0y7Q39dB3QzxIWVtJtUjqqiqtCSK0uN2SGEdFz6rVm71KdZHFj58SjZOnVHobN';
 
 const spanError = document.getElementById("error");
@@ -39,8 +39,6 @@ async function loadRandomGaticos() {
     img3.src = data[2].url;
     img4.src = data[3].url;
     img5.src = data[4].url;
-
-
     }
 }
 
@@ -55,8 +53,8 @@ async function loadFavoriteGaticos() {
     } 
 }
 
-const myButton = document.getElementById("generar");
-myButton.onclick = loadRandomGaticos();
+//const myButton = document.getElementById("generar");
+//myButton.onclick = loadRandomGaticos();
 
 
 loadRandomGaticos();
