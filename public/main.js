@@ -18,7 +18,7 @@ const API_URL_FAVORITES = 'https://api.thecatapi.com/v1/favourites?limit=3&api_k
 
 const spanError = document.getElementById("error");
 
-async function loadRandomGaticos () {
+async function loadRandomGaticos() {
     const res = await fetch(API_URL_RANDOM);
     const data = await res.json();
     console.log("Random");
@@ -41,7 +41,7 @@ async function loadRandomGaticos () {
     }
 }
 
-async function loadFavoriteGaticos () {
+async function loadFavoriteGaticos() {
     const res = await fetch(API_URL_FAVORITES);
     const data = await res.json();
     console.log("Favoritos");
@@ -52,9 +52,8 @@ async function loadFavoriteGaticos () {
     } 
 }
 
-const myButton = document.querySelector("button");
+const myButton = document.getElementById("generar");
 myButton.onclick = loadRandomGaticos();
-
 
 
 loadRandomGaticos();
