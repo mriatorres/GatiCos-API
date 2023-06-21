@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn-remove {
+        @apply  absolute mt-2 ml-20 md:ml-14 lg:ml-24 lg:mt-4 w-6 h-6 text-red-400 hover:translate-y-2 hover:scale-150 hover:ease-in duration-300 hover:text-red-700;
+    }
+
+    .btn-star {
+        @apply absolute ml-4 mt-4 lg:ml-4 w-6 h-6 text-yellow-200 hover:translate-y-2 hover:scale-150 hover:ease-in duration-300 hover:text-yellow-400;
+    }
+
+    .btn-generar {
+        @apply bg-blue-950 shadow-md w-60 rounded-md p-2 text-white font-medium hover:scale-110 hover:ease-in duration-300;
+    }
+
+    .img {
+        @apply bg-contain rounded-md;
+    }
+
+    .body-bg {
+        @apply bg-gradient-to-r from-blue-800 to-indigo-900;
+    }
+
+    .title-main {
+        @apply mt-20 font-extrabold text-2xl text-center text-white;
+    }
+
+    .subtitle {
+        @apply text-center text-lg font-bold text-white mb-4;
+    }
+
+    .div-img {
+        @apply lg:flex space-y-4 lg:space-x-4 md:flex md:space-x-4 md:overflow-y-hidden overflow-x-auto overscroll-x-contain;
+    }
+  
+    .section-favorites {
+        @apply m-10 text-center text-white items-center;
+    }
+
+    .div-favImgs {
+        @apply space-y-4 md:grid md:grid-cols-4 md:gap-4 lg:grid lg:grid-cols-4 lg:gap-4;
+    }
+
+}
+
+
